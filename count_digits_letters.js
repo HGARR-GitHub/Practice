@@ -5,6 +5,6 @@ const arRandom = random.split('')
 
 const letters = arRandom.filter((item)=> isNaN(item)).length
 const digits = arRandom.filter((item)=> !isNaN(item)).length
-console.log ('Count letters: ' + letters)
-console.log ('Count digits: ' + digits)
+console.log (random)
+console.log (`Count letters: ${letters} / Count digits: ${digits}`)
 

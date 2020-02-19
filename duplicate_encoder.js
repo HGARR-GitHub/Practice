@@ -11,3 +11,18 @@ Example
 "Success"  =>  ")())())"
 "(( @"     =>  "))((" 
 */
+
+const strNew = "gsjhdgfjhsdgfjhgs"
+const arrNew = strNew.split("")
+console.log (arrNew)
+const arrEncoded =  arrNew.map(function(item,index,arrTemp) {
+  let count = 0
+  for (i=0;(i<arrTemp.length-1 || count<2) ;i++){
+    if (item == arrTemp(i)){
+      count++
+    }
+  }
+  return (count==1) ? "(" : ")"
+})
+
+console.log (arrEncoded)

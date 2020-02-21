@@ -12,17 +12,17 @@ Example
 "(( @"     =>  "))((" 
 */
 
-const strNew = "gsjhdgfjhsdgfjhgs"
-const arrNew = strNew.split("")
-console.log (arrNew)
-const arrEncoded =  arrNew.map(function(item,index,arrTemp) {
+const strNew = "ssabb"
+let arrNew = strNew.split("")
+
+let arrEncoded =  arrNew.map((item,pos,arr) => {
   let count = 0
-  for (i=0;(i<arrTemp.length-1 || count<2) ;i++){
-    if (item == arrTemp(i)){
+  for (i=0;(i<arr.length) ;i++){
+   if (item == arr[i]){
       count++
-    }
+   }
   }
-  return (count==1) ? "(" : ")"
+  return ((count==1) ? "(" : ")")
 })
 
 console.log (arrEncoded)

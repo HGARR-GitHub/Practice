@@ -32,4 +32,14 @@ console.log (alphabetPosition("z/az"))
 //  .toUpperCase()
 //  .split``
 //  .map(e => e.charCodeAt() - 64)
-//  .join` `;
+//  .join` `
+//
+// - 4 -
+//
+//function alphabetPosition(text) {
+//  return text
+//    .toUpperCase()
+//    .match(/[a-z]/gi)
+//    .map( (c) => c.charCodeAt() - 64)
+//    .join(' ');
+// }

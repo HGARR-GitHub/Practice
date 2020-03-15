@@ -5,8 +5,8 @@
 arr = ['a','b','c','d','d','e','a','b','c','f','g','h','h','h','e','a'];
 var newArr = arr.reduce(function(prev, cur) {
   prev[cur] = (prev[cur] || 0) + 1
-  console.log (prev)
+  //console.log (prev)
   return prev
 }, {});
 
-//console.log(newArr)
+console.log(newArr)
